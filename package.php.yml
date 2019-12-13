@@ -1,15 +1,15 @@
-name: jppm-test-project  # имя проекта
-version: 1.0.0           # версия проекта
-# список зависимостей
-deps:                    
-  jphp-core: '*'         # ядро jphp
-  jphp-zend-ext: '*'     # пакет со стандартными функциями php
-# список плагинов
+name: jppm-test-project
+version: 1.0.0
+deps:
+  jphp-core: '*'
+  jphp-json-ext: '*'
+  jphp-yaml-ext: '*'
 plugins:
-- App                    # плагин который позволяет запускать проект
-# список директорий, в которых хранятся исходные файлы проекта
+- App
 sources:
 - src
-# список файлов, которые будут выполнены при запуске проекта
 includes:
 - index.php
+
+app:
+  args: ['sample-data/input.json', 'sample-data/output.yml']
