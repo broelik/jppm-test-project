@@ -1,0 +1,11 @@
+/.git/**
+/jars/**
+/bundle/**
+/.gradle/**
+/vendor/**
+/build/**
+
+/package.hub.yml
+/package-lock.php.yml
+/gradle
+/out/**
